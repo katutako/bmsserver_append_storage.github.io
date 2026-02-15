@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたの名前 - BMS差分保管所</title>
+    <style>
+        /* 全体のデザイン設定 */
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .description {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        /* テーブル（表）のデザイン */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #34495e;
+            color: #fff;
+            white-space: nowrap;
+        }
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        /* ダウンロードボタンのデザイン */
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        /* スマホ向けの設定（画面が狭いと縦並びになります） */
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr { display: block; }
+            th { display: none; }
+            tr { margin-bottom: 15px; border: 1px solid #ccc; }
+            td {
+                position: relative;
+                padding-left: 50%;
+                text-align: left;
+                border-bottom: none;
+            }
+            td:before {
+                position: absolute;
+                left: 15px;
+                width: 45%;
+                white-space: nowrap;
+                font-weight: bold;
+                color: #666;
+            }
+            td:nth-of-type(1):before { content: "難易度"; }
+            td:nth-of-type(2):before { content: "楽曲 / 作者"; }
+            td:nth-of-type(3):before { content: "差分DL"; }
+            td:nth-of-type(4):before { content: "備考・本体"; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BMS鯖差分保管所</h1>
+    <p>BMS鯖のメンバーによるBMSの譜面差分を公開しています。</p>
+</header>
+
+<div class="description">
+    <p><strong>注意事項：</strong></p>
+    <ul>
+        <li>何か不具合などがあれば、Discord（<a>@ka2ta5da_1145</a>）までご連絡ください。</li>
+    </ul>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>楽曲名 / アーティスト</th>
+            <th>差分DL</th>
+            <th>備考</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td>
+                <strong>Broken FM[OVERCLOCK]</strong><br>
+                <span style="font-size: 0.8em; color: #666;">おわりん</span>
+            </td>
+            <td>
+                <a href="https://drive.google.com/file/d/1CQ9MTz4m1XSX-pC9BY2mTyBp70aElwmX/view?usp=drive_link" class="btn" target="_blank">Download</a>
+            </td>
+            <td>
+                obj:ドーズ
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Linkager[全]</strong><br>
+                <span style="font-size: 0.8em; color: #666;">Aliesrite*</span>
+            </td>
+            <td>
+                <a href="https://drive.google.com/file/d/18ARIu3roAP6v2aqVvSDVqR39Wbe_2WTH/view?usp=drive_link" class="btn" target="_blank">Download</a>
+            </td>
+            <td>
+                obj:dokudami901
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <strong>Machine Movement[7Keys OVERCLOCK]</strong><br>
+                <span style="font-size: 0.8em; color: #666;">M-kani</span>
+            </td>
+            <td>
+                <a href="https://drive.google.com/file/d/1dpGUjoabv5g0HvoLtCGYZ0CUpDDRv0Nr/view?usp=drive_link" class="btn" target="_blank">Download</a>
+            </td>
+            <td>
+                obj:ドーズ
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
